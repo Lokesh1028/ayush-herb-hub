@@ -12,7 +12,7 @@ export const Layout: React.FC<LayoutProps> = ({ children, className }) => {
   return (
     <div className="flex min-h-screen">
       <Sidebar />
-      <main className={cn("flex-1 p-6 md:p-8 lg:p-10", className)}>
+      <main className={cn("flex-1 transition-all duration-300 p-6 md:p-8 lg:p-10 md:ml-16", className)}>
         {children}
       </main>
     </div>
