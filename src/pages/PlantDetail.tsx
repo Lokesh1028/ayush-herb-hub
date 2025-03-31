@@ -71,9 +71,9 @@ const PlantDetail = () => {
           <Card>
             <CardContent className="p-6">
               <h2 className="text-xl font-semibold text-herb-800 dark:text-herb-100 mb-4">Medicinal Uses</h2>
-              <ul className="list-disc pl-5 space-y-2 text-herb-700 dark:text-herb-300">
+              <ul className="list-disc pl-5 space-y-2 text-herb-700 dark:text-herb-300 text-left">
                 {plant.medicinalUses.map((use, index) => (
-                  <li key={index}>{use}</li>
+                  <li key={index} className="pl-2">{use}</li>
                 ))}
               </ul>
             </CardContent>
@@ -95,9 +95,9 @@ const PlantDetail = () => {
           <Card>
             <CardContent className="p-6">
               <h2 className="text-xl font-semibold text-herb-800 dark:text-herb-100 mb-4">Identification Tips</h2>
-              <ul className="list-disc pl-5 space-y-2 text-herb-700 dark:text-herb-300">
+              <ul className="list-disc pl-5 space-y-2 text-herb-700 dark:text-herb-300 text-left">
                 {plant.identificationTips.map((tip, index) => (
-                  <li key={index}>{tip}</li>
+                  <li key={index} className="pl-2">{tip}</li>
                 ))}
               </ul>
             </CardContent>
