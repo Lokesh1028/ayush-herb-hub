@@ -10,9 +10,9 @@ interface LayoutProps {
 
 export const Layout: React.FC<LayoutProps> = ({ children, className }) => {
   return (
-    <div className="flex min-h-screen bg-herb-50/50 dark:bg-herb-900/50 relative font-nunito">
-      {/* Background Image */}
-      <div className="absolute inset-0 bg-cover bg-center bg-no-repeat z-0" 
+    <div className="flex min-h-screen w-full bg-herb-50/50 dark:bg-herb-900/50 relative font-nunito">
+      {/* Background Image - Make sure it covers the entire viewport */}
+      <div className="fixed inset-0 bg-cover bg-center bg-no-repeat z-0 w-screen h-screen" 
            style={{ backgroundImage: 'url("/lovable-uploads/773d3d8f-f2b4-4c1f-9252-352c5bad6143.png")' }}>
         {/* Overlay to ensure text readability */}
         <div className="absolute inset-0 bg-black/20 backdrop-blur-[1px]"></div>

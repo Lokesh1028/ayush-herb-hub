@@ -12,7 +12,7 @@ interface PlantCardProps {
 export const PlantCard: React.FC<PlantCardProps> = ({ plant }) => {
   return (
     <Link to={`/plant/${plant.id}`}>
-      <Card className="overflow-hidden border-white/20 bg-white/10 backdrop-blur-md shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 h-full animate-fade-in">
+      <Card className="overflow-hidden border-white/20 bg-black/30 backdrop-blur-md shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 h-full animate-fade-in">
         <div className="aspect-[4/3] w-full overflow-hidden">
           <div className="w-full h-full bg-gradient-to-br from-teal-900/70 to-blue-900/70 flex items-center justify-center">
             <div className="text-6xl font-serif text-amber-200 opacity-80">

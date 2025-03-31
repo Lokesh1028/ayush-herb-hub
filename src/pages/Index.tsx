@@ -18,7 +18,7 @@ const Index = () => {
   
   return (
     <Layout>
-      <section className="mb-12 search-container py-12 -mx-10 px-6 sm:px-10 rounded-xl border border-white/20 bg-black/30 backdrop-blur-md">
+      <section className="mb-12 search-container py-12 px-6 sm:px-10 rounded-xl border border-white/20 bg-black/30 backdrop-blur-md">
         <div className="max-w-3xl mx-auto text-center">
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-4 animate-fade-in text-shadow">
             Virtual Herbal Garden
@@ -56,7 +56,7 @@ const Index = () => {
         </div>
       </section>
       
-      <section className="bg-white/10 backdrop-blur-md border border-white/20 rounded-xl p-6 mb-8 shadow-lg">
+      <section className="bg-black/30 backdrop-blur-md border border-white/20 rounded-xl p-6 mb-8 shadow-lg">
         <h2 className="text-2xl font-bold text-amber-100 mb-4">About the Project</h2>
         <p className="text-white mb-4">
           The Virtual Herbal Garden is an educational resource designed to help students learn about 
