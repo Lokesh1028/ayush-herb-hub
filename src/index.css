@@ -1,3 +1,4 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -115,19 +116,11 @@
   }
   
   .search-container {
-    @apply bg-transparent;
+    @apply bg-gradient-to-r from-herb-100 to-herb-50 dark:from-herb-900/80 dark:to-herb-950/80 backdrop-blur-sm;
   }
   
   .leaf-pattern {
     background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M30 30c-5.5 0-10-4.5-10-10s4.5-10 10-10 10 4.5 10 10-4.5 10-10 10zm0-18c-4.4 0-8 3.6-8 8s3.6 8 8 8 8-3.6 8-8-3.6-8-8-8z' fill='%239C92AC' fill-opacity='0.05' fill-rule='evenodd'/%3E%3C/svg%3E");
-  }
-  
-  .text-shadow {
-    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
-  }
-  
-  .glass-card {
-    @apply bg-white/10 backdrop-blur-md border border-white/20 shadow-lg;
   }
 }
 
@@ -173,6 +166,7 @@
   100% { background-position: -200% 0; }
 }
 
+/* Keep existing App.css styles */
 #root {
   max-width: 1280px;
   margin: 0 auto;
