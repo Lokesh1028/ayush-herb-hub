@@ -1,5 +1,5 @@
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { cn } from '@/lib/utils';
@@ -12,6 +12,11 @@ export const Sidebar: React.FC = () => {
   const toggleSidebar = () => {
     setIsOpen(!isOpen);
   };
+
+  // Close sidebar on route change (for mobile)
+  useEffect(() => {
+    setIsOpen(false);
+  }, [location.pathname]);
 
   const navigation = [
     { name: 'Home', path: '/', icon: Home },
@@ -54,7 +59,6 @@ export const Sidebar: React.FC = () => {
                     ? "bg-herb-200 text-herb-800 dark:bg-herb-800 dark:text-herb-100" 
                     : "text-herb-700 hover:bg-herb-100 dark:text-herb-200 dark:hover:bg-herb-800"
                 )}
-                onClick={() => setIsOpen(false)}
               >
                 <item.icon className="mr-3 h-5 w-5" />
                 {item.name}
