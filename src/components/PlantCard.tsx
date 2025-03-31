@@ -43,7 +43,7 @@ export const PlantCard: React.FC<PlantCardProps> = ({ plant }) => {
             <div className="flex items-center gap-2 text-left">
               <Leaf className="h-5 w-5 text-herb-500 dark:text-herb-400 flex-shrink-0" />
               <span className="text-herb-700 dark:text-herb-300 text-sm">
-                Family: {plant.family || 'Unspecified'}
+                Family: {plant.familyName || 'Unspecified'}
               </span>
             </div>
             
@@ -57,8 +57,8 @@ export const PlantCard: React.FC<PlantCardProps> = ({ plant }) => {
             <div className="flex items-center gap-2 text-left">
               <Pill className="h-5 w-5 text-herb-500 dark:text-herb-400 flex-shrink-0" />
               <span className="text-herb-700 dark:text-herb-300 text-sm">
-                Treats: {plant.treatableConditions.slice(0, 2).join(', ')}
-                {plant.treatableConditions.length > 2 ? '...' : ''}
+                Treats: {plant.ailmentsTreated.slice(0, 2).join(', ')}
+                {plant.ailmentsTreated.length > 2 ? '...' : ''}
               </span>
             </div>
           </div>
