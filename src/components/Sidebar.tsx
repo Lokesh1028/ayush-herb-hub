@@ -32,16 +32,16 @@ export const Sidebar: React.FC = () => {
       <Button 
         variant="outline" 
         size="icon" 
-        className="fixed top-4 left-4 z-50 md:hidden" 
+        className="fixed top-4 left-4 z-50 md:hidden shadow-md hover:shadow-lg transition-all" 
         onClick={toggleSidebar}
       >
-        {isOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
+        {isOpen ? <X className="h-5 w-5 animate-fade-in" /> : <Menu className="h-5 w-5 animate-fade-in" />}
       </Button>
       
       <aside 
         ref={sidebarRef}
         className={cn(
-          "fixed inset-y-0 left-0 z-40 bg-herb-50 dark:bg-herb-900 border-r border-herb-200 dark:border-herb-800 transition-all duration-300 ease-in-out transform md:translate-x-0",
+          "fixed inset-y-0 left-0 z-40 bg-herb-50/90 dark:bg-herb-900/90 backdrop-blur-sm border-r border-herb-200 dark:border-herb-800 transition-all duration-300 ease-in-out transform md:translate-x-0 shadow-lg",
           isOpen ? "translate-x-0" : "-translate-x-full md:translate-x-0",
           isHovered ? "md:w-64" : "md:w-16"
         )}
@@ -51,30 +51,34 @@ export const Sidebar: React.FC = () => {
             "flex items-center space-x-2 mb-8",
             !isHovered && "md:justify-center"
           )}>
-            <div className="h-8 w-8 rounded-full bg-herb-500 flex-shrink-0"></div>
+            <div className="h-8 w-8 rounded-full bg-gradient-to-br from-herb-400 to-herb-600 flex-shrink-0 shadow-md transition-transform duration-300 hover:scale-110"></div>
             <h2 className={cn(
-              "text-xl font-bold text-herb-800 dark:text-herb-100 transition-opacity duration-300",
-              !isHovered && "md:hidden"
+              "text-xl font-bold text-herb-800 dark:text-herb-100 transition-all duration-300",
+              !isHovered && "md:opacity-0 md:w-0"
             )}>AYUSH Herbs</h2>
           </div>
           
-          <nav className="mt-8 space-y-1">
+          <nav className="mt-8 space-y-2">
             {navigation.map((item) => (
               <Link
                 key={item.name}
                 to={item.path}
                 className={cn(
-                  "flex items-center px-4 py-3 text-sm font-medium rounded-md transition-colors",
+                  "flex items-center px-4 py-3 text-sm font-medium rounded-md transition-all duration-200 hover:translate-x-1",
                   !isHovered && "md:justify-center md:px-0",
                   location.pathname === item.path 
-                    ? "bg-herb-200 text-herb-800 dark:bg-herb-800 dark:text-herb-100" 
-                    : "text-herb-700 hover:bg-herb-100 dark:text-herb-200 dark:hover:bg-herb-800"
+                    ? "bg-herb-200/80 text-herb-800 dark:bg-herb-800/80 dark:text-herb-100 shadow-md" 
+                    : "text-herb-700 hover:bg-herb-100/80 dark:text-herb-200 dark:hover:bg-herb-800/80"
                 )}
               >
-                <item.icon className={cn("h-5 w-5", isHovered ? "mr-3" : "")} />
+                <item.icon className={cn(
+                  "h-5 w-5 transition-all duration-300", 
+                  isHovered ? "mr-3" : "",
+                  location.pathname === item.path ? "text-herb-600 dark:text-herb-300" : ""
+                )} />
                 <span className={cn(
-                  "transition-opacity duration-300", 
-                  !isHovered && "md:hidden"
+                  "transition-all duration-300", 
+                  !isHovered && "md:opacity-0 md:w-0 md:overflow-hidden"
                 )}>
                   {item.name}
                 </span>
