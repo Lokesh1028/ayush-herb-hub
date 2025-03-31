@@ -22,7 +22,7 @@ export const PlantCard: React.FC<PlantCardProps> = ({ plant }) => {
         </div>
         
         <CardContent className="p-6">
-          <div className="mb-4">
+          <div className="mb-4 text-left">
             <Badge 
               variant="outline" 
               className="bg-herb-50 text-herb-600 border-herb-200 dark:bg-herb-900 dark:text-herb-400 dark:border-herb-700 uppercase tracking-wider text-xs font-medium px-2.5 py-0.5"
@@ -31,15 +31,15 @@ export const PlantCard: React.FC<PlantCardProps> = ({ plant }) => {
             </Badge>
           </div>
           
-          <h3 className="text-xl font-bold text-herb-800 dark:text-herb-100 mb-2 leading-tight">
+          <h3 className="text-xl font-bold text-herb-800 dark:text-herb-100 mb-2 leading-tight font-poppins text-left">
             {plant.commonName}
           </h3>
           
-          <p className="text-sm text-herb-600 dark:text-herb-400 italic mb-3">
+          <p className="text-sm text-herb-600 dark:text-herb-400 italic mb-3 font-nunito text-left">
             {plant.botanicalName}
           </p>
           
-          <p className="text-herb-700 dark:text-herb-300 text-sm leading-relaxed line-clamp-3">
+          <p className="text-herb-700 dark:text-herb-300 text-sm leading-relaxed line-clamp-3 font-nunito text-left">
             {plant.description.substring(0, 120)}...
           </p>
         </CardContent>
