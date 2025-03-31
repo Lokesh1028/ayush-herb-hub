@@ -27,19 +27,19 @@ export const SearchBar: React.FC<SearchBarProps> = ({ onSearch }) => {
             placeholder={searchByAilment ? "Search by ailment..." : "Search by plant name..."}
             value={query}
             onChange={(e) => setQuery(e.target.value)}
-            className="pl-10 pr-4 py-3 bg-white dark:bg-herb-900 border-herb-200 dark:border-herb-700 focus:border-herb-500 focus:ring-herb-500"
+            className="pl-10 pr-4 py-3 bg-white/20 border-white/30 text-white placeholder:text-blue-100 backdrop-blur-md focus:border-teal-500 focus:ring-teal-500"
           />
-          <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 h-4 w-4 text-muted-foreground" />
+          <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 h-4 w-4 text-blue-100" />
         </div>
         <div className="flex gap-2">
           <Toggle
             pressed={searchByAilment}
             onPressedChange={setSearchByAilment}
-            className="data-[state=on]:bg-herb-500 data-[state=on]:text-white border-herb-200 dark:border-herb-700"
+            className="bg-white/20 border border-white/30 text-blue-100 data-[state=on]:bg-teal-700/80 data-[state=on]:text-white backdrop-blur-md"
           >
             Search by Ailment
           </Toggle>
-          <Button type="submit" className="bg-herb-600 hover:bg-herb-700 text-white">
+          <Button type="submit" className="bg-teal-700/80 hover:bg-teal-600/80 text-white">
             Search
           </Button>
         </div>
