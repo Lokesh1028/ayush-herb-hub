@@ -51,7 +51,11 @@ export const Sidebar: React.FC = () => {
             "flex items-center space-x-2 mb-8",
             !isHovered && "md:justify-center"
           )}>
-            <div className="h-8 w-8 rounded-full bg-gradient-to-br from-herb-400 to-herb-600 flex-shrink-0 shadow-md transition-transform duration-300 hover:scale-110"></div>
+            <img 
+              src="/lovable-uploads/b22e9d08-ba3c-4517-8e7c-1fda27423206.png" 
+              alt="AYUSH Herbs Leaf Logo" 
+              className="h-8 w-8 flex-shrink-0 shadow-md transition-transform duration-300 hover:scale-110"
+            />
             <h2 className={cn(
               "text-xl font-bold text-herb-800 dark:text-herb-100 transition-all duration-300",
               !isHovered && "md:opacity-0 md:w-0"
