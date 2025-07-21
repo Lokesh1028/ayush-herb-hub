@@ -1,16 +1,16 @@
-
-import React from 'react';
+import React, { useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { Layout } from '@/components/Layout';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { Card, CardContent } from '@/components/ui/card';
 import { getPlantById } from '@/data/plants';
-import { ArrowLeft } from 'lucide-react';
+import { ArrowLeft, Leaf } from 'lucide-react';
 
 const PlantDetail = () => {
   const { id } = useParams<{ id: string }>();
   const navigate = useNavigate();
+  const [imageError, setImageError] = useState(false);
   
   const plant = id ? getPlantById(id) : undefined;
   
@@ -41,8 +41,24 @@ const PlantDetail = () => {
         <div className="lg:col-span-1">
           <div className="sticky top-6">
             <div className="rounded-lg overflow-hidden border border-herb-200 dark:border-herb-700 bg-white dark:bg-herb-900 shadow-md">
-              <div className="h-64 bg-herb-200 dark:bg-herb-800 flex items-center justify-center">
-                <span className="text-herb-500 dark:text-herb-300">Plant Image</span>
+              <div className="h-64 overflow-hidden">
+                {plant.imageUrl && !imageError ? (
+                  <img 
+                    src={plant.imageUrl} 
+                    alt={plant.commonName} 
+                    className="w-full h-full object-cover"
+                    onError={() => setImageError(true)}
+                  />
+                ) : (
+                  <div className="w-full h-full bg-gradient-to-br from-herb-100/90 to-herb-200/90 dark:from-herb-800/90 dark:to-herb-900/90 flex items-center justify-center">
+                    <div className="text-center">
+                      <Leaf className="h-12 w-12 text-herb-500 dark:text-herb-400 mx-auto mb-2" />
+                      <span className="text-herb-500 dark:text-herb-300 text-sm">
+                        {plant.commonName}
+                      </span>
+                    </div>
+                  </div>
+                )}
               </div>
               <div className="p-4">
                 <h1 className="text-2xl font-bold text-herb-800 dark:text-herb-100">{plant.commonName}</h1>
