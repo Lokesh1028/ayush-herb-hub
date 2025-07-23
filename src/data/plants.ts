@@ -18,7 +18,7 @@ export const plants: Plant[] = [
     "commonName": "Aloe Vera",
     "botanicalName": "Aloe barbadensis",
     "familyName": "Asphodelaceae",
-    "imageUrl": "/src/data/images/alovera.jpeg",
+    "imageUrl": "https://i.pinimg.com/736x/6a/f6/74/6af674383d2cbc45c986c3e234bf3413.jpg",
     "description": "Aloe Vera is a succulent plant species known for its thick, fleshy leaves containing a soothing gel. It has been used for centuries in traditional medicine and skincare.",
     "medicinalUses": [
       "Soothes burns (sunburn, minor thermal burns)",
@@ -51,7 +51,7 @@ export const plants: Plant[] = [
     "commonName": "Ashwagandha",
     "botanicalName": "Withania somnifera",
     "familyName": "Solanaceae",
-    "imageUrl": "/src/data/images/Ashwagandha plant.webp",
+    "imageUrl": "https://i.pinimg.com/736x/e6/97/0f/e6970f628c398135258144a37962a667.jpg",
     "description": "Ashwagandha, also known as Indian Ginseng or Winter Cherry, is a key adaptogenic herb in Ayurvedic medicine. Its name relates to the scent of its root and its traditional use for strength.",
     "medicinalUses": [
       "Adaptogen for stress reduction",
@@ -85,7 +85,7 @@ export const plants: Plant[] = [
     "commonName": "Brahmi",
     "botanicalName": "Bacopa monnieri",
     "familyName": "Plantaginaceae",
-    "imageUrl": "/src/data/images/Brahmi full.webp",
+    "imageUrl": "https://i.pinimg.com/1200x/82/65/b1/8265b165b608db198544fbcb8c6670a7.jpg",
     "description": "Brahmi (often referring to Bacopa monnieri) is a renowned Ayurvedic herb celebrated for its cognitive-enhancing properties. It's a creeping perennial often found in wet, marshy areas.",
     "medicinalUses": [
       "Enhances memory and learning",
@@ -117,7 +117,7 @@ export const plants: Plant[] = [
     "commonName": "Cardamom (Green)",
     "botanicalName": "Elettaria cardamomum",
     "familyName": "Zingiberaceae",
-    "imageUrl": "/src/data/images/Cardamom full.webp",
+    "imageUrl": "https://i.pinimg.com/736x/c0/e7/63/c0e76321e848326f485670f91b0c5731.jpg",
     "description": "Cardamom, the 'Queen of Spices,' is a highly aromatic spice derived from the seeds of plants in the ginger family. It's widely used in culinary applications and traditional medicine, especially for digestion.",
     "medicinalUses": [
       "Aids digestion, reduces bloating and gas (carminative)",
@@ -150,7 +150,7 @@ export const plants: Plant[] = [
     "commonName": "Chamomile (German)",
     "botanicalName": "Matricaria chamomilla",
     "familyName": "Asteraceae",
-    "imageUrl": "/src/data/images/chamomile-tea.webp",
+    "imageUrl": "https://i.pinimg.com/1200x/8a/ba/35/8aba35e2020c0f7e8a9ad79c807f8888.jpg",
     "description": "Chamomile refers to several daisy-like plants, most commonly German Chamomile. It's widely known for its calming properties and is frequently consumed as a tea.",
     "medicinalUses": [
       "Promotes relaxation and sleep (mild sedative)",
@@ -182,7 +182,7 @@ export const plants: Plant[] = [
     "commonName": "Cinnamon",
     "botanicalName": "Cinnamomum verum (Ceylon) / Cinnamomum cassia (Cassia)",
     "familyName": "Lauraceae",
-    "imageUrl": "/src/data/images/Cinnamon full.webp",
+    "imageUrl": "https://i.pinimg.com/736x/17/71/4d/17714d77785fb08de24d70557fd56337.jpg",
     "description": "Cinnamon is a popular spice obtained from the inner bark of several tree species from the genus Cinnamomum. It's known for its warm, sweet flavor and aroma, and various health benefits.",
     "medicinalUses": [
       "Helps regulate blood sugar levels",
@@ -214,7 +214,7 @@ export const plants: Plant[] = [
     "commonName": "Clove",
     "botanicalName": "Syzygium aromaticum",
     "familyName": "Myrtaceae",
-    "imageUrl": "/src/data/images/Clove full.webp",
+    "imageUrl": "https://i.pinimg.com/736x/60/80/25/60802501b2286e0f31085a8494e69b16.jpg",
     "description": "Cloves are the aromatic dried flower buds of an evergreen tree native to Indonesia. They are used as a spice in cooking and have significant medicinal properties, particularly analgesic and antiseptic.",
     "medicinalUses": [
       "Analgesic (pain relief, especially toothache)",
@@ -246,7 +246,7 @@ export const plants: Plant[] = [
     "commonName": "Dandelion",
     "botanicalName": "Taraxacum officinale",
     "familyName": "Asteraceae",
-    "imageUrl": "/src/data/images/dandelion-roots-with-leaves.webp",
+    "imageUrl": "https://i.pinimg.com/736x/27/d8/00/27d800f94db1cb95ab7523bcb8c33c55.jpg",
     "description": "Often considered a weed, Dandelion is a highly nutritious plant whose leaves, flowers, and roots have been used in traditional medicine for liver support, digestion, and as a diuretic.",
     "medicinalUses": [
       "Supports liver function and detoxification",
@@ -281,7 +281,7 @@ export const plants: Plant[] = [
     "commonName": "Eucalyptus",
     "botanicalName": "Eucalyptus globulus (Blue Gum) / other species",
     "familyName": "Myrtaceae",
-    "imageUrl": "/src/data/images/Eucalyptus fu,ll.webp",
+    "imageUrl": "https://i.pinimg.com/1200x/bf/ec/2a/bfec2ae9c3f66d22bc6f225bdca13363.jpg",
     "description": "Eucalyptus refers to a large genus of trees and shrubs, primarily native to Australia. The leaves, especially from Eucalyptus globulus, yield an oil known for its strong camphoraceous scent and use in respiratory remedies.",
     "medicinalUses": [
       "Decongestant (helps clear nasal passages)",
@@ -314,7 +314,7 @@ export const plants: Plant[] = [
     "commonName": "Fenugreek",
     "botanicalName": "Trigonella foenum-graecum",
     "familyName": "Fabaceae",
-    "imageUrl": "/src/data/images/Eucalyptus fu,ll.webp",
+    "imageUrl": "https://i.pinimg.com/736x/1a/63/eb/1a63eb72c215dec965aecc71aa531a9a.jpg",
     "description": "Fenugreek is an annual plant whose seeds and leaves are common ingredients in Indian cuisine. The seeds have a distinct maple-like aroma and taste and are used traditionally for blood sugar control and lactation support.",
     "medicinalUses": [
       "Helps lower blood sugar levels",
@@ -348,7 +348,7 @@ export const plants: Plant[] = [
     "commonName": "Garlic",
     "botanicalName": "Allium sativum",
     "familyName": "Amaryllidaceae",
-    "imageUrl": "/src/data/images/Garlic uses.webp",
+    "imageUrl": "https://i.pinimg.com/736x/a3/ae/dc/a3aedce8858c8af2e2f3903002499719.jpg",
     "description": "Garlic is a species in the onion genus, Allium, widely used worldwide as a flavoring agent and traditional medicine. It's known for its pungent aroma and potent health benefits, particularly for cardiovascular health.",
     "medicinalUses": [
       "Supports cardiovascular health (blood pressure, cholesterol)",
@@ -381,7 +381,7 @@ export const plants: Plant[] = [
     "commonName": "Ginger",
     "botanicalName": "Zingiber officinale",
     "familyName": "Zingiberaceae",
-    "imageUrl": "/src/data/images/Ginger full.webp",
+    "imageUrl": "https://i.pinimg.com/736x/d2/71/44/d27144debe46bbcff7451bd65c8776f2.jpg",
     "description": "Ginger is a flowering plant whose rhizome (underground stem) is widely used as a spice and folk medicine. It has a pungent, spicy-sweet flavor and aroma, and is well-known for its anti-nausea and digestive properties.",
     "medicinalUses": [
       "Anti-nausea (motion sickness, morning sickness, chemotherapy-induced)",
@@ -414,7 +414,7 @@ export const plants: Plant[] = [
     "commonName": "Guduchi (Giloy)",
     "botanicalName": "Tinospora cordifolia",
     "familyName": "Menispermaceae",
-    "imageUrl": "/src/data/images/Guduchi (Giloy) leaf.webp",
+    "imageUrl": "https://i.pinimg.com/1200x/a7/86/39/a786396fcd6952c1dbcc432c168b8319.jpg",
     "description": "Guduchi, also known as Giloy or Amrita ('Nectar of Immortality'), is a large climbing shrub highly revered in Ayurveda as a potent immunomodulator and rejuvenator.",
     "medicinalUses": [
       "Boosts immune system function (immunomodulator)",
@@ -450,7 +450,7 @@ export const plants: Plant[] = [
     "commonName": "Lemon Grass",
     "botanicalName": "Cymbopogon citratus / Cymbopogon flexuosus",
     "familyName": "Poaceae",
-    "imageUrl": "/src/data/images/lemongrass-full.webp",
+    "imageUrl": "https://i.pinimg.com/1200x/2b/ec/07/2bec075f675d995aca55482d2c20ac69.jpg",
     "description": "Lemon Grass is a tropical grass known for its distinct lemon fragrance and flavor. It's widely used in Southeast Asian cuisine and traditional medicine, particularly for digestion and fever.",
     "medicinalUses": [
       "Aids digestion, relieves stomach cramps",
@@ -483,7 +483,7 @@ export const plants: Plant[] = [
     "commonName": "Licorice (Mulethi)",
     "botanicalName": "Glycyrrhiza glabra",
     "familyName": "Fabaceae",
-    "imageUrl": "/src/data/images/Licorice (Mulethi) full.webp",
+    "imageUrl": "https://i.pinimg.com/1200x/8f/96/24/8f96249b04d163bcb2221940fba538ca.jpg",
     "description": "Licorice is a perennial plant whose root is known for its characteristic sweetness (much sweeter than sugar). It has a long history of use in traditional medicine, especially for respiratory and digestive issues.",
     "medicinalUses": [
       "Soothes sore throats and coughs (demulcent, expectorant)",
@@ -516,7 +516,7 @@ export const plants: Plant[] = [
     "commonName": "Neem",
     "botanicalName": "Azadirachta indica",
     "familyName": "Meliaceae",
-    "imageUrl": "/src/data/images/neem full.webp",
+    "imageUrl": "https://i.pinimg.com/1200x/dd/99/b7/dd99b7c19d97893e66809b83c19da8b8.jpg",
     "description": "Neem is a fast-growing evergreen tree native to the Indian subcontinent, revered as the 'village pharmacy'. Nearly all parts of the tree are used in traditional medicine for their potent antimicrobial and purifying properties.",
     "medicinalUses": [
       "Potent antimicrobial (antibacterial, antifungal, antiviral)",
@@ -554,7 +554,7 @@ export const plants: Plant[] = [
     "commonName": "Shatavari",
     "botanicalName": "Asparagus racemosus",
     "familyName": "Asparagaceae",
-    "imageUrl": "/src/data/images/Shatavari full.webp",
+    "imageUrl": "https://i.pinimg.com/736x/96/ff/9d/96ff9dcc86cfe44642e23a3d59b7fa10.jpg",
     "description": "Shatavari, meaning 'she who possesses a hundred husbands,' is a species of asparagus renowned in Ayurveda as a primary female reproductive tonic and adaptogen.",
     "medicinalUses": [
       "Supports female reproductive health",
@@ -589,7 +589,7 @@ export const plants: Plant[] = [
     "commonName": "Tulsi (Holy Basil)",
     "botanicalName": "Ocimum tenuiflorum / Ocimum sanctum",
     "familyName": "Lamiaceae",
-    "imageUrl": "/src/data/images/tulsi full.webp",
+    "imageUrl": "https://i.pinimg.com/1200x/72/b0/7e/72b07e0f3bafe100a05cadd055fe6a83.jpg",
     "description": "Tulsi, or Holy Basil, is a sacred aromatic plant in Hinduism and widely used in Ayurveda. It's considered an adaptogen with numerous benefits for immunity, stress, and respiratory health.",
     "medicinalUses": [
       "Adaptogen, helps manage stress",
@@ -623,7 +623,7 @@ export const plants: Plant[] = [
     "commonName": "Turmeric",
     "botanicalName": "Curcuma longa",
     "familyName": "Zingiberaceae",
-    "imageUrl": "/src/data/images/turmeric plant.webp",
+    "imageUrl": "https://i.pinimg.com/1200x/03/57/1d/03571d155ce0e324723d4282ca592b86.jpg",
     "description": "Turmeric is a flowering plant of the ginger family, best known for its bright yellow-orange rhizome. It's a staple spice in South Asian cuisine and a cornerstone of Ayurvedic medicine, prized for its potent anti-inflammatory compound, curcumin.",
     "medicinalUses": [
       "Potent anti-inflammatory",
